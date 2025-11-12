@@ -14,7 +14,6 @@ struct InfoSheetViewComponent: View{
     let title: String
     let description: String
     
-    
     var body: some View{
         HStack(alignment: .top, spacing: 16){
             Image(systemName: image)

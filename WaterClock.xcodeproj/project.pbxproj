@@ -10,6 +10,7 @@
 		045F41802E922A21002C1916 /* Service .swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F417F2E922A21002C1916 /* Service .swift */; };
 		045F41822E922A29002C1916 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F41812E922A29002C1916 /* DataService.swift */; };
 		045F41852E922C27002C1916 /* ApiErrorEnum .swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F41842E922C27002C1916 /* ApiErrorEnum .swift */; };
+		04AEAA572EC50F9A00728A6E /* CardModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEAA562EC50F9A00728A6E /* CardModel .swift */; };
 		04B078E92E9174560058A05E /* InfoSheetViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B078E82E9174560058A05E /* InfoSheetViewComponent.swift */; };
 		04B078EB2E91762A0058A05E /* SheetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B078EA2E91762A0058A05E /* SheetModel.swift */; };
 		04B078EE2E91781F0058A05E /* SheetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B078ED2E91781F0058A05E /* SheetInfoView.swift */; };
@@ -29,6 +30,7 @@
 		04FA0ACA2EC3C0C200096A07 /* ScreenEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0AC92EC3C0C200096A07 /* ScreenEnum.swift */; };
 		04FA0ACE2EC3C14F00096A07 /* MetricTitleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0ACD2EC3C14F00096A07 /* MetricTitleComponent.swift */; };
 		04FA0AD02EC3C39D00096A07 /* MainCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0ACF2EC3C39D00096A07 /* MainCardComponent.swift */; };
+		04FA0AD42EC4381900096A07 /* FeatureCarouselComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0AD32EC4381900096A07 /* FeatureCarouselComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		045F417F2E922A21002C1916 /* Service .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service .swift"; sourceTree = "<group>"; };
 		045F41812E922A29002C1916 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		045F41842E922C27002C1916 /* ApiErrorEnum .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiErrorEnum .swift"; sourceTree = "<group>"; };
+		04AEAA562EC50F9A00728A6E /* CardModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardModel .swift"; sourceTree = "<group>"; };
 		04B078E82E9174560058A05E /* InfoSheetViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheetViewComponent.swift; sourceTree = "<group>"; };
 		04B078EA2E91762A0058A05E /* SheetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModel.swift; sourceTree = "<group>"; };
 		04B078ED2E91781F0058A05E /* SheetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetInfoView.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		04FA0AC92EC3C0C200096A07 /* ScreenEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenEnum.swift; sourceTree = "<group>"; };
 		04FA0ACD2EC3C14F00096A07 /* MetricTitleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricTitleComponent.swift; sourceTree = "<group>"; };
 		04FA0ACF2EC3C39D00096A07 /* MainCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardComponent.swift; sourceTree = "<group>"; };
+		04FA0AD32EC4381900096A07 /* FeatureCarouselComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCarouselComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				04FA0AC82EC3C0B800096A07 /* AppState */,
-				04C796E42E8F41E500A31CD8 /* Components */,
 				04D44AAC2E9AB7AC00E0746A /* Extensions */,
 				045F41832E922C0A002C1916 /* Enums */,
 				04C796E22E8F41D900A31CD8 /* Models */,
@@ -202,6 +205,7 @@
 		04C796E12E8F41D200A31CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04C796E42E8F41E500A31CD8 /* Components */,
 				04D44AAF2E9B5AF500E0746A /* ChartView */,
 				04D44AA92E9AB37500E0746A /* HomeView */,
 				04B078EC2E9177DF0058A05E /* SheetInfoView */,
@@ -215,6 +219,7 @@
 			children = (
 				04B078EA2E91762A0058A05E /* SheetModel.swift */,
 				04D44AA52E987A8200E0746A /* ClockModel.swift */,
+				04AEAA562EC50F9A00728A6E /* CardModel .swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			children = (
 				04FA0ACD2EC3C14F00096A07 /* MetricTitleComponent.swift */,
 				04FA0ACF2EC3C39D00096A07 /* MainCardComponent.swift */,
+				04FA0AD32EC4381900096A07 /* FeatureCarouselComponent.swift */,
 			);
 			path = HomeComponents;
 			sourceTree = "<group>";
@@ -429,7 +435,9 @@
 				04D44AB12E9B5B0000E0746A /* ChartView.swift in Sources */,
 				045F41852E922C27002C1916 /* ApiErrorEnum .swift in Sources */,
 				04D44AA82E9AB23800E0746A /* HomeViewModel .swift in Sources */,
+				04FA0AD42EC4381900096A07 /* FeatureCarouselComponent.swift in Sources */,
 				04B078EB2E91762A0058A05E /* SheetModel.swift in Sources */,
+				04AEAA572EC50F9A00728A6E /* CardModel .swift in Sources */,
 				04B078E92E9174560058A05E /* InfoSheetViewComponent.swift in Sources */,
 				04D44AA62E987A8200E0746A /* ClockModel.swift in Sources */,
 				045F41802E922A21002C1916 /* Service .swift in Sources */,

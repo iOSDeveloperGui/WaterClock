@@ -21,6 +21,7 @@ struct SheetInfoView: View{
                 .font(.system(size: 28, weight: .semibold, design: .rounded))
                 .multilineTextAlignment(.center)
                 .padding(.all, 12)
+                .padding(.horizontal, 36)
                 
 
             VStack(alignment: .leading, spacing: 32){
