@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct WaterClockApp: App {
+    @EnvironmentObject private var appState: AppState
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainCoordinatorView()
+                .environmentObject(appState)
+                
         }
     }
 }

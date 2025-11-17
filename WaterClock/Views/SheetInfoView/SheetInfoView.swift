@@ -9,21 +9,19 @@ import Foundation
 import SwiftUI
 
 struct SheetInfoView: View{
-    //MARK: - Binding
-    @Binding var showHome: Bool
+    @EnvironmentObject private var appState: AppState 
     
-    //MARK: - Body
     var body: some View{
         VStack(spacing: 32){
-        
+            Spacer() 
             Text("Welcome to Clock Water")
-                .foregroundStyle(.primary)
-                .font(.system(size: 28, weight: .semibold, design: .rounded))
+                .lineLimit(nil)
+                .font(.system(size: 28, weight: .bold))
                 .multilineTextAlignment(.center)
-                .padding(.all, 12)
-                .padding(.horizontal, 36)
-                
-
+                .foregroundStyle(.primary)
+                .padding(.horizontal, 40)
+               
+            
             VStack(alignment: .leading, spacing: 32){
                 InfoSheetViewComponent(
                     image: "drop",
@@ -43,32 +41,34 @@ struct SheetInfoView: View{
                     description: "See your estimated monthly savings on your water bill and your environmental impact in real-time."
                 )
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 40)
+           
             
-            
-            
-            
-            
+            Spacer()
             
             Button(action: {
-                showHome = true
+                appState.showHome()
             }, label: {
-                Text("Let's get started")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .frame(width: 332, height: 50)
-                    .background(Color.splashBlue)
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
-                    .padding(.horizontal, 16)
-                    .shadow(radius: 2)
+                VStack{
+                    Text("Let's get started")
+                        .font(.title3)
+                        .foregroundStyle(Color.white)
+                    
+                }
+                .frame(width: 332, height: 50)
+                .background(Color.splashBlue)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+                .padding(.vertical, 16)
+                .shadow(radius: 2)
             })
             
-
+            
         }
         
     }
 }
 
 #Preview {
-    SheetInfoView(showHome: .constant(false))
+    SheetInfoView()
+        .environmentObject(AppState(serviceData: Service(dataService: DataService())))
 }

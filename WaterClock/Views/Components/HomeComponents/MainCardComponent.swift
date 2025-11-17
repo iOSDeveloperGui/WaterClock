@@ -31,6 +31,7 @@ struct MainCardComponent: View{
                 .frame(height: 200)
                 .background(cardModel.backgroundColor)
                 
+                
                 Text(cardModel.title)
                     .font(.headline)
                     .fontWeight(.semibold)
@@ -38,9 +39,10 @@ struct MainCardComponent: View{
                     .padding(.vertical, 16)
                     .frame(maxWidth: .infinity)
                     .background(Color.white)
+                    
             }
-            .padding(.horizontal, 20)
             .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding(.horizontal, 24)
             .shadow(color: Color.black.opacity(0.1), radius: 6, x: 0, y: 3)
 
         })

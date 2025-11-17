@@ -19,9 +19,9 @@ struct InfoSheetViewComponent: View{
             Image(systemName: image)
                 .font(.title2)
                 .foregroundStyle(.splashBlue)
-                .frame(width: 32)
+                .frame(width: 40)
             
-            VStack(alignment: .leading, spacing: 4){
+            VStack(alignment: .leading){
                 Text(title)
                     .font(.headline)
                     .foregroundStyle(.primary)
@@ -29,13 +29,8 @@ struct InfoSheetViewComponent: View{
                 Text(description)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.leading)
                     
             }
-            
-          
         }
-        .padding(.horizontal, 16)
-        
     }
 }

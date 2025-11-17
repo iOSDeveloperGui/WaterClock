@@ -8,6 +8,7 @@
 import Foundation
 
 enum ScreenEnum{
+    case splashView
     case homeView
     case chartView
 }

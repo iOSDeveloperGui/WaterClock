@@ -33,20 +33,22 @@ struct FeatureCarouselComponent: View{
     ]
     
     var body: some View{
-        ScrollView(.horizontal, showsIndicators: false){
+        GeometryReader{ geometry in
             TabView(selection: $cardIndex){
-                
                 ForEach(featureCards.indices, id: \.self){ index in
                     MainCardComponent(cardModel: featureCards[index])
+                        .padding()
+                        .frame(width: geometry.size.width * 0.8, height: geometry.size.height * 0.8)
                         .tag(index)
-                        .padding(.horizontal, 20)
                 }
                 
+                
             }
-            .frame(width: 400, height: 400)
-            .background(Color.splashBlueLight.opacity(0.4).ignoresSafeArea())
             .tabViewStyle(.page(indexDisplayMode: .always))
             .indexViewStyle(.page(backgroundDisplayMode: .always))
+            
         }
+        .frame(height: 300)
+        
     }
 }

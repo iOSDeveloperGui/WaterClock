@@ -16,61 +16,68 @@ struct HomeView: View{
     
     var body: some View{
         NavigationStack{
-            ScrollView(.vertical, showsIndicators: false){
-                VStack(spacing: 20){
+            ZStack{
+                LinearGradient( colors: [Color.splashBlue.opacity(0.5), .white],
+                                startPoint: .top,
+                                endPoint: .bottom
+                )
+                .ignoresSafeArea()
+                
+                ScrollView(.vertical, showsIndicators: false){
                     
-                    FeatureCarouselComponent()
-                    
-                    Divider()
+                    VStack(spacing: 20){
                         
-                    
-                    VStack(alignment: .leading, spacing: 12){
-                        Text("Recently usage")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .padding(.horizontal, 16)
+                        FeatureCarouselComponent()
                         
-                        ScrollView(.horizontal, showsIndicators: false){
-                            HStack(spacing: 16){
-                                if loading{
-                                    ProgressView()
-                                } else{
-                                    ForEach(viewModel.data){ clock in
-                                        MetricTitleComponent(clock: clock)
-                                            .frame(width: 230)
+                        Divider()
+                            .padding(.horizontal, 20)
+                            .padding(.top, 10)
+                        
+                        VStack(alignment: .leading, spacing: 12){
+                            Text("Recently usage")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .padding(.horizontal, 16)
+                            
+                            ScrollView(.horizontal, showsIndicators: false){
+                                HStack(spacing: 16){
+                                    if loading{
+                                        ProgressView()
+                                    } else{
+                                        ForEach(viewModel.data){ clock in
+                                            MetricTitleComponent(clock: clock)
+                                                .frame(width: 230)
+                                        }
                                     }
                                 }
+                                .padding(.horizontal, 16)
                             }
-                            .padding(.horizontal, 16)
+                            
                         }
+                        
+                        Spacer().frame(height: 100)
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            HStack(alignment: .center){
+                                Text("View Detailed Report")
+                                
+                                Image(systemName: "chart.bar.xaxis")
+                            }
+                            .frame(width: 300)
+                            .padding()
+                            .background(Color.splashBlue)
+                            .foregroundStyle(.white)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                        })
+                        
+                        .navigationTitle("Water Usage ⏱️")
+                        .navigationBarTitleDisplayMode(.inline)
                         
                     }
                     
-                    Spacer()
-                    
-                    Button(action: {
-                        
-                    }, label: {
-                        HStack(alignment: .center){
-                            Text("View Detailed Report")
-                            
-                            Image(systemName: "chart.bar.xaxis")
-                        }
-                        .frame(width: 300)
-                        .padding()
-                        .background(Color.splashBlue)
-                        .foregroundStyle(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
-                    })
-                    
-                    .navigationTitle("Water Usage ⏱️")
-                    .navigationBarTitleDisplayMode(.inline)
-                    
                 }
-                
-                
-                
-                
             }
             
         }

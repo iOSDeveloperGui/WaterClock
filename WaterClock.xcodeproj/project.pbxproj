@@ -10,18 +10,19 @@
 		045F41802E922A21002C1916 /* Service .swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F417F2E922A21002C1916 /* Service .swift */; };
 		045F41822E922A29002C1916 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F41812E922A29002C1916 /* DataService.swift */; };
 		045F41852E922C27002C1916 /* ApiErrorEnum .swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F41842E922C27002C1916 /* ApiErrorEnum .swift */; };
+		049B6B6C2ECAD9040003F34C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B6B6B2ECAD9040003F34C /* AppState.swift */; };
+		049B6B6E2ECADBBA0003F34C /* MainCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B6B6D2ECADBBA0003F34C /* MainCoordinatorView.swift */; };
 		04AEAA572EC50F9A00728A6E /* CardModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEAA562EC50F9A00728A6E /* CardModel .swift */; };
 		04B078E92E9174560058A05E /* InfoSheetViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B078E82E9174560058A05E /* InfoSheetViewComponent.swift */; };
 		04B078EB2E91762A0058A05E /* SheetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B078EA2E91762A0058A05E /* SheetModel.swift */; };
 		04B078EE2E91781F0058A05E /* SheetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B078ED2E91781F0058A05E /* SheetInfoView.swift */; };
 		04C796B72E8F415200A31CD8 /* WaterClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796B62E8F415200A31CD8 /* WaterClockApp.swift */; };
-		04C796B92E8F415200A31CD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796B82E8F415200A31CD8 /* ContentView.swift */; };
 		04C796BB2E8F415400A31CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C796BA2E8F415400A31CD8 /* Assets.xcassets */; };
 		04C796BE2E8F415400A31CD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C796BD2E8F415400A31CD8 /* Preview Assets.xcassets */; };
 		04C796C82E8F415500A31CD8 /* WaterClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796C72E8F415500A31CD8 /* WaterClockTests.swift */; };
 		04C796D22E8F415500A31CD8 /* WaterClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796D12E8F415500A31CD8 /* WaterClockUITests.swift */; };
 		04C796D42E8F415500A31CD8 /* WaterClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796D32E8F415500A31CD8 /* WaterClockUITestsLaunchTests.swift */; };
-		04C796E72E8F420500A31CD8 /* WaterClockSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796E62E8F420500A31CD8 /* WaterClockSplashView.swift */; };
+		04C796E72E8F420500A31CD8 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C796E62E8F420500A31CD8 /* SplashView.swift */; };
 		04D44AA62E987A8200E0746A /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44AA52E987A8200E0746A /* ClockModel.swift */; };
 		04D44AA82E9AB23800E0746A /* HomeViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44AA72E9AB23800E0746A /* HomeViewModel .swift */; };
 		04D44AAB2E9AB38000E0746A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44AAA2E9AB38000E0746A /* HomeView.swift */; };
@@ -54,13 +55,14 @@
 		045F417F2E922A21002C1916 /* Service .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service .swift"; sourceTree = "<group>"; };
 		045F41812E922A29002C1916 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		045F41842E922C27002C1916 /* ApiErrorEnum .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApiErrorEnum .swift"; sourceTree = "<group>"; };
+		049B6B6B2ECAD9040003F34C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		049B6B6D2ECADBBA0003F34C /* MainCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorView.swift; sourceTree = "<group>"; };
 		04AEAA562EC50F9A00728A6E /* CardModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardModel .swift"; sourceTree = "<group>"; };
 		04B078E82E9174560058A05E /* InfoSheetViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheetViewComponent.swift; sourceTree = "<group>"; };
 		04B078EA2E91762A0058A05E /* SheetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModel.swift; sourceTree = "<group>"; };
 		04B078ED2E91781F0058A05E /* SheetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetInfoView.swift; sourceTree = "<group>"; };
 		04C796B32E8F415200A31CD8 /* WaterClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C796B62E8F415200A31CD8 /* WaterClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterClockApp.swift; sourceTree = "<group>"; };
-		04C796B82E8F415200A31CD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04C796BA2E8F415400A31CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C796BD2E8F415400A31CD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04C796C32E8F415500A31CD8 /* WaterClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +70,7 @@
 		04C796CD2E8F415500A31CD8 /* WaterClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C796D12E8F415500A31CD8 /* WaterClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterClockUITests.swift; sourceTree = "<group>"; };
 		04C796D32E8F415500A31CD8 /* WaterClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		04C796E62E8F420500A31CD8 /* WaterClockSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterClockSplashView.swift; sourceTree = "<group>"; };
+		04C796E62E8F420500A31CD8 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		04D44AA52E987A8200E0746A /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
 		04D44AA72E9AB23800E0746A /* HomeViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel .swift"; sourceTree = "<group>"; };
 		04D44AAA2E9AB38000E0746A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		049B6B6F2ECADBBD0003F34C /* CoordinatorView */ = {
+			isa = PBXGroup;
+			children = (
+				049B6B6D2ECADBBA0003F34C /* MainCoordinatorView.swift */,
+			);
+			path = CoordinatorView;
+			sourceTree = "<group>";
+		};
 		04B078EC2E9177DF0058A05E /* SheetInfoView */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +173,6 @@
 				04C796E02E8F41CC00A31CD8 /* Resources  */,
 				04C796E32E8F41DD00A31CD8 /* ViewModels */,
 				04C796B62E8F415200A31CD8 /* WaterClockApp.swift */,
-				04C796B82E8F415200A31CD8 /* ContentView.swift */,
 				04C796BC2E8F415400A31CD8 /* Preview Content */,
 			);
 			path = WaterClock;
@@ -205,6 +214,7 @@
 		04C796E12E8F41D200A31CD8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				049B6B6F2ECADBBD0003F34C /* CoordinatorView */,
 				04C796E42E8F41E500A31CD8 /* Components */,
 				04D44AAF2E9B5AF500E0746A /* ChartView */,
 				04D44AA92E9AB37500E0746A /* HomeView */,
@@ -244,7 +254,7 @@
 		04C796E52E8F41F300A31CD8 /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
-				04C796E62E8F420500A31CD8 /* WaterClockSplashView.swift */,
+				04C796E62E8F420500A31CD8 /* SplashView.swift */,
 			);
 			path = SplashView;
 			sourceTree = "<group>";
@@ -276,6 +286,7 @@
 		04FA0AC82EC3C0B800096A07 /* AppState */ = {
 			isa = PBXGroup;
 			children = (
+				049B6B6B2ECAD9040003F34C /* AppState.swift */,
 			);
 			path = AppState;
 			sourceTree = "<group>";
@@ -428,8 +439,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C796E72E8F420500A31CD8 /* WaterClockSplashView.swift in Sources */,
-				04C796B92E8F415200A31CD8 /* ContentView.swift in Sources */,
+				04C796E72E8F420500A31CD8 /* SplashView.swift in Sources */,
+				049B6B6E2ECADBBA0003F34C /* MainCoordinatorView.swift in Sources */,
 				04FA0ACA2EC3C0C200096A07 /* ScreenEnum.swift in Sources */,
 				04B078EE2E91781F0058A05E /* SheetInfoView.swift in Sources */,
 				04D44AB12E9B5B0000E0746A /* ChartView.swift in Sources */,
@@ -439,6 +450,7 @@
 				04B078EB2E91762A0058A05E /* SheetModel.swift in Sources */,
 				04AEAA572EC50F9A00728A6E /* CardModel .swift in Sources */,
 				04B078E92E9174560058A05E /* InfoSheetViewComponent.swift in Sources */,
+				049B6B6C2ECAD9040003F34C /* AppState.swift in Sources */,
 				04D44AA62E987A8200E0746A /* ClockModel.swift in Sources */,
 				045F41802E922A21002C1916 /* Service .swift in Sources */,
 				04D44AAE2E9AB7C600E0746A /* ExtensionColors.swift in Sources */,
